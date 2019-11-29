@@ -1,0 +1,40 @@
+- name: 合作伙伴开发人员文档
+  href: index.md
+  items:
+    - name: 概述和方案
+      href: develop/index.md
+      items:
+        - name: 立即开始行动
+          href: develop/get-started.md
+          items:
+            - name: 合作伙伴 API 身份验证
+              href: develop/api-authentication.md
+        - name: 方案
+          href: develop/scenarios.md
+          items:
+            - name: 引荐
+              href: develop/referrals.md
+              items:
+                - name: 创建引荐
+                  href: develop/create-a-referral.md
+                - name: 获取引荐列表
+                  href: develop/get-a-list-of-referrals.md
+                - name: 按 ID 获取引荐
+                  href: develop/get-a-referral-by-id.md
+                - name: 更新引荐
+                  href: develop/update-a-referral.md
+                - name: 引荐连接器
+                  href: develop/referral-connectors.md
+                - name: 引荐资源
+                  href: develop/referral-resources.md
+    - name: REST API 参考
+      href: develop/rest-api-reference.md
+      items:
+        - name: REST 终结点 URL
+          href: develop/rest-urls.md
+        - name: REST 标头
+          href: develop/headers.md
+        - name: REST 错误代码
+          href: develop/error-codes.md
+        - name: REST 资源
+          href: develop/rest-resources.md
