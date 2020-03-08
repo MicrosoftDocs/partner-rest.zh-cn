@@ -6,10 +6,10 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: 2fbab9020d3028a7416585fd7249cab02610e5eb
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556627"
 ---
 # <a name="partner-rest-resources"></a>合作伙伴 REST 资源
@@ -26,7 +26,7 @@ ms.locfileid: "74556627"
 * ReferralQualification
 * CustomerProfile
 * CustomerProfileType
-* 地址
+* Address
 * 成员
 * ContactPreference
 * Consent

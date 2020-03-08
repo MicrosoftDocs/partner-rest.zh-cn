@@ -5,16 +5,16 @@ ms.date: 05/21/2019
 ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
-ms.openlocfilehash: 8b793a06a6f1aedc339b9e6be271a8307926da20
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.openlocfilehash: b21dc7c9576c7944798a7db7c38ddd694cfe713f
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556597"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78909396"
 ---
 # <a name="partner-api-rest-error-codes"></a>合作伙伴 API REST 错误代码
 
-适用于：
+适用范围：
 
 - 合作伙伴 API
 
@@ -24,23 +24,23 @@ ms.locfileid: "74556597"
 
 下表列出并介绍了可能返回的 HTTP 状态代码。
 
-| 状态代码 | 状态消息                  | 描述                                                                                                                            |
+| 状态代码 | 状态消息                  | 说明                                                                                                                            |
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| 400         | 无效的请求                     | 无法处理请求，因为它的格式错误，或者它不正确。                                                                       |
-| 401         | 未经授权                    | 所需身份验证信息缺失或者对资源来说无效。                                                   |
-| 403         | 已禁止                       | 访问请求的资源时被拒绝。 用户可能没有足够的权限。 **重要：如果将条件访问策略应用到某个资源，可能会返回 `HTTP 403; Forbidden error=insufficent_claims`。** 有关 Microsoft Graph 和条件访问的更多详细信息，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 400         | 错误的请求                     | 无法处理请求，因为它的格式错误，或者它不正确。                                                                       |
+| 401         | Unauthorized                    | 所需身份验证信息缺失或者对资源来说无效。                                                   |
+| 403         | 已禁止                       | 访问请求的资源时被拒绝。 用户可能没有足够的权限。 **重要：如果将条件访问策略应用到某个资源，可能会返回 `HTTP 403; Forbidden error=insufficent_claims`。** 有关 Microsoft Graph 和条件访问的更多详细信息，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | 未找到                       | 请求的资源不存在。                                                                                                  |
-| 405         | 不允许的方法              | 资源上不允许请求中的 HTTP 方法。                                                                         |
+| 405         | 不允许使用的方法              | 资源上不允许请求中的 HTTP 方法。                                                                         |
 | 406         | 不可接受                  | 此服务不支持在 Accept 标头中请求的格式。                                                                |
 | 409         | 冲突                        | 当前状态与请求预期的状态冲突。 例如，指定的父文件夹可能不存在。                   |
 | 410         | 不存在                            | 请求的资源在服务器上不再可用。                                               |
-| 411         | 需要指定长度                 | 请求中需要 Content-Length 标头。                                                                                    |
+| 411         | 需要的长度                 | 请求中需要 Content-Length 标头。                                                                                    |
 | 412         | 不满足前提条件             | 请求中提供的前提条件（例如 if-match 标头）与资源的当前状态不匹配。                       |
 | 413         | 请求实体太大        | 请求大小超出最大限制。                                                                                            |
-| 415         | 媒体类型不受支持          | 请求的内容类型是服务不支持的格式。                                                      |
+| 415         | 不支持的介质类型          | 请求的内容类型是服务不支持的格式。                                                      |
 | 416         | 请求的范围无法满足 | 指定的字节范围无效或不可用。                                                                                    |
 | 422         | 无法处理的实体            | 无法处理请求，因为它在语义上不正确。                                                                        |
-| 423         | 已锁定                          | 所访问的资源已锁定。                                                                                          |
+| 423         | Locked                          | 所访问的资源已锁定。                                                                                          |
 | 429         | 请求过多               | 客户端应用程序已受限，请过一段时间后再尝试重复该请求。                |
 | 500         | 内部服务器错误           | 处理请求时出现内部服务器错误。                                                                       |
 | 501         | 未实现                 | 未实现请求的功能。                                                                                               |
@@ -57,21 +57,21 @@ ms.locfileid: "74556597"
 
 下面的表和代码示例介绍错误响应的架构。
 
-| 名称        | 在任务栏的搜索框中键入   | 描述                                                                                    |
+| 名称        | 类型   | 说明                                                                                    |
 |-------------|--------|------------------------------------------------------------------------------------------------|
-| code        | 字符串 | 始终返回。 指示已发生的错误的类型。 非 null。                          |
-| 消息 | 字符串 | 始终返回。 详细描述错误，并提供其他调试信息。 非 null，非空。 最大长度为 1024 个字符。 |
+| 代码        | string | 始终返回。 指示已发生的错误的类型。 非 null。                          |
+| message | string | 始终返回。 详细描述错误，并提供其他调试信息。 非 null，非空。 最大长度为 1024 个字符。 |
 | innerError        | 对象  | 可选。 其他错误对象，可能比顶级错误更具体。                                   |
-| target      | 字符串 | 错误一开始出现时所在的目标。                                                      |
+| target      | string | 错误一开始出现时所在的目标。                                                      |
 
 ### <a name="code-property"></a>Code 属性
 
 `code` 属性包含下述可能值之一。 应用应准备好处理下述任何错误。
 
-| 代码                      | 描述
+| 代码                      | 说明
 |:--------------------------|:--------------
 | **accessDenied**          | 调用方没有执行此操作的权限。
-| **generalException**      | 发生了未指定的错误。
+| **generalException**      | 发生了错误。
 | **invalidRequest**        | 请求的格式错误，或者请求不正确。
 | **itemNotFound**          | 找不到资源。
 |**preconditionFailed**     | 请求中提供的前提条件（例如 if-match 标头）与资源的当前状态不匹配。
@@ -81,7 +81,7 @@ ms.locfileid: "74556597"
 
 ### <a name="message-property"></a>Message 属性
 
-根中的 `message` 属性包含一条供开发人员阅读的错误消息。 错误消息未本地化，不应直接显示给用户。 处理错误时，代码不应将 `message` 值作为键值来处理，因为它们可能会随时更改，并且通常包含特定于已失败请求的动态信息。 只应针对 `code` 属性中返回的错误代码进行编码。
+根中的 `message` 属性包含一条供开发人员阅读的错误消息。 错误消息未本地化，不应直接显示给用户。 当处理错误时，你的代码不应对 `message` 值进行检查，因为它们可以随时更改，并且通常包含特定于失败请求的动态信息。 只应针对 `code` 属性中返回的错误代码进行编码。
 
 ### <a name="innererror-object"></a>InnerError 对象
 

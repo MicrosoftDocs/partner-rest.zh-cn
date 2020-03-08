@@ -6,21 +6,21 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: 3639a5885b13953d57fc5cc86ad1abd3dc0d3614
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556497"
 ---
 # <a name="get-a-referral-by-id"></a>按 ID 获取引荐
 
-适用于：
+适用范围：
 
 - 合作伙伴 API
 
 本主题说明了如何按 ID 获取引荐。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - [Partner API authentication](api-authentication.md)（合作伙伴 API 身份验证）中所述的凭据。 此方案支持使用应用凭据和用户凭据进行身份验证。
 
@@ -36,9 +36,9 @@ ms.locfileid: "74556497"
 
 在 URL 中使用以下 ID
 
-| 名称                   | 在任务栏的搜索框中键入     | 必需 | 描述                                                     |
+| 名称                   | 类型     | 必需 | 说明                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|ID                      | 字符串   | 是       | 引荐 ID       |
+|ID                      | string   | 是       | 引荐 ID       |
 
 ### <a name="request-headers"></a>请求标头
 

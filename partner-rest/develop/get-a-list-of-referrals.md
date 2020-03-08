@@ -6,21 +6,21 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: 7daa7a1989a5832f58d555b1f8bb3d7681024dba
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556527"
 ---
 # <a name="get-a-list-of-referrals"></a>获取引荐列表
 
-适用于：
+适用范围：
 
 - 合作伙伴 API
 
 本主题说明了如何获取引荐列表。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - [Partner API authentication](api-authentication.md)（合作伙伴 API 身份验证）中所述的凭据。 此方案支持使用应用凭据和用户凭据进行身份验证。
 
@@ -34,7 +34,7 @@ ms.locfileid: "74556527"
 
 #### <a name="supported-odata-operations"></a>支持的 OData 操作
 
-| 名称     | 描述            | 示例                                                                    |
+| 名称     | 说明            | 示例                                                                    |
 |:---------|:-----------------------|:---------------------------------------------------------------------------|
 | $filter  | 筛选结果（行） |`/referrals?$filter=engagementId eq '65edc0b5-3485-41b7-a17e-dfa9ef4706e2'` |
 | $orderby | 将结果排序         |`/referrals?$orderby=createdDateTime desc`                                  |
@@ -43,19 +43,19 @@ ms.locfileid: "74556527"
 
 使用以下筛选器参数获取引荐列表
 
-| 名称         | 在任务栏的搜索框中键入   | 必需 | 描述                                                                             |
+| 名称         | 类型   | 必需 | 说明                                                                             |
 |--------------|--------|----------|-----------------------------------------------------------------------------------------|
-| engagementId | 字符串 | 否       | 一个参与 ID。                                                                       |
-| status       | 字符串 | 否       | 一个表示 [ReferralStatus](referral-resources.md#referralstatus) 的字符串       |
-| substatus    | 字符串 | 否       | 一个表示 [ReferralSubstatus](referral-resources.md#referralsubstatus) 的字符串 |
-| updatedDateTime     | 字符串 | 否       | 引荐的 UpdatedDatetime |
-| 电子邮件     | 字符串 | 否       | 引荐的团队联系人电子邮件 |
+| engagementId | string | 是       | 一个参与 ID。                                                                       |
+| status       | string | 是       | 一个表示 [ReferralStatus](referral-resources.md#referralstatus) 的字符串       |
+| substatus    | string | 是       | 一个表示 [ReferralSubstatus](referral-resources.md#referralsubstatus) 的字符串 |
+| updatedDateTime     | string | 是       | 引荐的 UpdatedDatetime |
+| 电子邮件     | string | 是       | 引荐的团队联系人电子邮件 |
 
 #### <a name="supported-orderby-parameters"></a>支持的排序方式参数
 
 使用以下排序方式参数获取引荐列表
 
-| 名称           | 在任务栏的搜索框中键入     | 必需 | 描述                        |
+| 名称           | 类型     | 必需 | 说明                        |
 |----------------|----------|----------|------------------------------------|
 |createdDateTime | DateTime | 是      | 引荐创建日期和时间 |
 

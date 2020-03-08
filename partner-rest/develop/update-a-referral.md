@@ -6,21 +6,21 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: cae08ddffc7fd97682a009a430b4cd1114f8e761
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556767"
 ---
 # <a name="update-a-referral"></a>更新引荐
 
-适用于：
+适用范围：
 
 - 合作伙伴 API
 
 本主题说明了如何更新引荐。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - [Partner API authentication](api-authentication.md)（合作伙伴 API 身份验证）中所述的凭据。 此方案支持使用应用凭据和用户凭据进行身份验证。
 
@@ -43,24 +43,24 @@ ms.locfileid: "74556767"
 
 下表说明了请求正文中的[引荐](referral-resources.md)属性。
 
-| 属性            | 在任务栏的搜索框中键入                                                                 | 描述                                                                                                          |
+| 属性            | 类型                                                                 | 说明                                                                                                          |
 |---------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| ID                  | 字符串                                                               | 此引荐的 ID。                                                                                            |
-| EngagementId        | 字符串                                                               | 此引荐的 EngagementID。 可以将多个引荐关联到单个 EngagementID                    |
-| 名称                | 字符串                                                               | 引荐的名称。                                                                                            |
-| ExternalReferenceId | 字符串                                                               | 引荐的外部标识符。 示例：存储自己的 Dynamics 365 潜在客户/机会 ID                    |
+| ID                  | string                                                               | 此引荐的 ID。                                                                                            |
+| EngagementId        | string                                                               | 此引荐的 EngagementID。 可以将多个引荐关联到单个 EngagementID                    |
+| 名称                | string                                                               | 引荐的名称。                                                                                            |
+| ExternalReferenceId | string                                                               | 引荐的外部标识符。 示例：存储你自己的 Dynamics 365 潜在客户/机会 ID                    |
 | CreatedDateTime     | 采用 UTC 日期/时间格式的字符串                                       | 创建引荐的日期。                                                                                   |
 | UpdatedDateTime     | 采用 UTC 日期/时间格式的字符串                                       | 上次更新引荐的日期。                                                                              |
 | ExpirationDateTime  | 采用 UTC 日期/时间格式的字符串                                       | 引荐将过期的日期。                                                                                   |
 | 状态              | [ReferralStatus](referral-resources.md#referralstatus)               | 一个 [Enum](https://docs.microsoft.com/dotnet/api/system.enum)，其值指示引荐状态。          |
 | Substatus           | [ReferralSubstatus](referral-resources.md#referralsubstatus)         | 一个 [Enum](https://docs.microsoft.com/dotnet/api/system.enum)，其值指示引荐子状态。      |
-| StatusReason        | 字符串                                                               | 一条有关状态的说明性消息。 例如，说明为什么丢失了引荐。                              |
+| StatusReason        | string                                                               | 一条有关状态的说明性消息。 例如，说明为什么丢失了引荐。                              |
 | ReferralType        | [ReferralType](referral-resources.md#referraltype)                   | 表示引荐类型。                                                                                        |
 | Qualification       | [ReferralQualification](referral-resources.md#referralqualification) | 表示引荐的质量。                                                                              |
 | CustomerProfile     | [CustomerProfile](referral-resources.md#customerprofile)             | 客户联系人信息。                                                                                        |
 | Consent             | [许可](referral-resources.md#consent)                             | 如果要与其他组织共享信息并允许其联系用户，则使用许可标记。                |
 | 详细信息             | [ReferralDetails](referral-resources.md#referraldetails)             | 客户详细信息、说明、交易值、货币结账日期。                                                          |
-| 组                | [成员](referral-resources.md#member)                               | 表示涉及合作伙伴参与计划的组织中的用户。                                   |
+| 团队                | [成员](referral-resources.md#member)                               | 表示涉及合作伙伴参与计划的组织中的用户。                                   |
 | InviteContext       | [InviteContext](referral-resources.md#invitecontext)                 | 表示用户在邀请其他组织参与合作伙伴计划时可以提供的其他信息。 |
 | 目标         | [ReferralTarget](referral-resources.md#target)        | 表示用户在邀请其他组织参与合作伙伴计划时可以提供的其他信息。  |
 
@@ -68,9 +68,9 @@ ms.locfileid: "74556767"
 
 | 状态 | 允许的状态转换 | 允许的子状态            |
 |--------|---------------------------|------------------------------|
-| 新增    | 新增、活跃、已关闭       | 挂起、已接收            |
-| 活跃 | 活跃、已关闭            | 接受                     |
-| 关闭 | 关闭                    | 赢得、丢失、已拒绝、已过期 |
+| 新建    | 新增、活跃、已关闭       | 挂起、已接收            |
+| 活动 | 活跃、已关闭            | 已接受                     |
+| 已关闭 | 已关闭                    | 赢得、丢失、已拒绝、已过期 |
 
 ### <a name="request-example"></a>请求示例
 

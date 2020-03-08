@@ -16,8 +16,8 @@
 
 若要建议更改文档，请按以下步骤操作：
 
-1. 如果你是在查看 Docs.microsoft.com 页面，请单击页面右上角的“编辑”  按钮。  我们会将你重定向到 [GitHub 存储库](https://github.com/microsoftdocs/partner-rest)中的相应 Markdown 源文件。  如果你已经在 [GitHub 存储库](https://github.com/microsoftdocs/partner-rest)中，则可直接导航到要更改的源文件。
-2. 如果还没有 GitHub 帐户，请单击右上角的“注册”，创建一个新帐户。 
+1. 如果你是在查看 Docs.microsoft.com 页面，请单击页面右上角的“编辑”按钮。  我们会将你重定向到 [GitHub 存储库](https://github.com/microsoftdocs/partner-rest)中的相应 Markdown 源文件。  如果你已经在 [GitHub 存储库](https://github.com/microsoftdocs/partner-rest)中，则可直接导航到要更改的源文件。
+2. 如果还没有 GitHub 帐户，请单击右上角的“注册”，创建一个新帐户。
 3. 在要更改的 GitHub 页中，单击铅笔图标。
 4. 修改文件，使用预览选项卡来确保所做的更改看起来是合适的。
 5. 完成后，提交所做的更改并打开一个拉取请求。
