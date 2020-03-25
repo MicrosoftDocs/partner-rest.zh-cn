@@ -4,7 +4,7 @@
     - name: 概述和方案
       href: develop/index.md
       items:
-        - name: 立即开始行动
+        - name: 入门
           href: develop/get-started.md
           items:
             - name: 合作伙伴 API 身份验证
@@ -27,6 +27,13 @@
                   href: develop/referral-connectors.md
                 - name: 引荐资源
                   href: develop/referral-resources.md
+            - name: 定价
+              href: develop/pricing.md
+              items:
+                - name: 获取价目表
+                  href: develop/get-a-price-sheet.md
+                - name: 获取外币汇率
+                  href: develop/get-foreign-exchange-rates.md
     - name: REST API 参考
       href: develop/rest-api-reference.md
       items:
