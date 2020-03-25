@@ -2,21 +2,21 @@
 layout: LandingPage
 title: Microsoft 合作伙伴 API
 description: Microsoft 合作伙伴的资源和文档
-ms.date: 02/26/2019
+ms.date: 02/26/2010
 ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: bb1c37377bb4d87120cb8523ae5a2a44e965da7f
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
+ms.openlocfilehash: 0f6ad53b5fedf7f91ac053ac60cbb902014bdc3d
+ms.sourcegitcommit: 42214c7f8e122bd79adb6f4b56729bd8716b1e92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556930"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542052"
 ---
 # <a name="microsoft-partner-api-documentation-and-resources"></a>Microsoft 合作伙伴 API 文档和资源
 
-Microsoft 合作伙伴 API 是 [Microsoft 合作伙伴中心 API](https://docs.microsoft.com/en-us/partner-center/develop/) 的后续版本。 借助此 API，你就能够以编程方式访问合作伙伴中心的功能。
+Microsoft 合作伙伴 API 是 [Microsoft 合作伙伴中心 API](https://docs.microsoft.com/partner-center/develop/) 的后续版本。 借助此 API，你就能够以编程方式访问合作伙伴中心的功能。
 
 <ul id="products1" class="cardsC cols cols3 panelContent">
     <li>
@@ -30,7 +30,7 @@ Microsoft 合作伙伴 API 是 [Microsoft 合作伙伴中心 API](https://docs.m
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>立即开始行动</h3>
+                            <h3>入门</h3>
                             <p>开始使用 Microsoft 合作伙伴 API。 启用 API 访问，并了解如何进行身份验证来调用合作伙伴 API。</p>
                         </div>
                     </div>
