@@ -3,15 +3,15 @@ title: Microsoft 合作伙伴 API 概述和方案
 description: 用于开发应用的 Microsoft 合作伙伴的概述和方案
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 7f2f66529761f7f724e516315a340dd2f5077804
-ms.sourcegitcommit: 42214c7f8e122bd79adb6f4b56729bd8716b1e92
+ms.openlocfilehash: 19cafd370180c7a50f8c1c49cafc97bc90912ff5
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541982"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342212"
 ---
 # <a name="microsoft-partner-api-overviews-and-scenarios"></a>Microsoft 合作伙伴 API 概述和方案
 

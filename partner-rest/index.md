@@ -2,17 +2,16 @@
 layout: LandingPage
 title: Microsoft 合作伙伴 API
 description: Microsoft 合作伙伴的资源和文档
-ms.date: 02/26/2010
+ms.date: 03/26/2020
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.topic: landing-page
-searchScope: []
-ms.openlocfilehash: 0f6ad53b5fedf7f91ac053ac60cbb902014bdc3d
-ms.sourcegitcommit: 42214c7f8e122bd79adb6f4b56729bd8716b1e92
+ms.openlocfilehash: 8d055348c254a6128f81f5f9d19eb3596386371c
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542052"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80341994"
 ---
 # <a name="microsoft-partner-api-documentation-and-resources"></a>Microsoft 合作伙伴 API 文档和资源
 
@@ -50,7 +49,7 @@ Microsoft 合作伙伴 API 是 [Microsoft 合作伙伴中心 API](https://docs.m
                         </div>
                         <div class="cardText">
                             <h3>方案</h3>
-                            <p>通过 Microsoft 合作伙伴 REST API 提供的编程方案。</p>
+                               <p>通过 Microsoft 合作伙伴 REST API 提供的编程方案。</p>
                         </div>
                     </div>
                 </div>
