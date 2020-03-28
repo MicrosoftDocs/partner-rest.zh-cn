@@ -3,14 +3,14 @@ title: 引荐资源
 description: 引荐资源表示直接来自客户、Microsoft 或其他合作伙伴的销售线索。
 ms.date: 05/17/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 147afef315bf5d9a8e3b5d045259ed2c94bf6acd
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 08438d208da57a4df40aeb609b14b6b6a6128d45
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "76542042"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342189"
 ---
 # <a name="referral-resources"></a>引荐资源
 

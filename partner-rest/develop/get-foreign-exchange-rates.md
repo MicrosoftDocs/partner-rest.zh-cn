@@ -3,14 +3,14 @@ title: 获取外币汇率
 description: 获取给定月的外币汇率。
 ms.date: 01/24/2020
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 0d044c36a94c521fbfb980017e0503e78826ffd1
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 5afcc09b7409e02cd072ac58cd7168652d4c3608
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "76796616"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342251"
 ---
 # <a name="get-foreign-exchange-rates"></a>获取外币汇率
 

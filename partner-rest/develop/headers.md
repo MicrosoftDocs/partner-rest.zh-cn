@@ -3,14 +3,14 @@ title: 合作伙伴 API REST 标头
 description: 合作伙伴 REST API 支持以下 HTTP 请求和响应标头。
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: a660fe9b38e675704e102dc956d4d9fd01fb88c7
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 955cab07da7f3a386690e18042165015906d864a
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "77476215"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342227"
 ---
 # <a name="partner-rest-api-headers"></a>合作伙伴 REST API 标头
 

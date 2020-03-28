@@ -3,14 +3,14 @@ title: 获取价目表
 description: 获取给定市场和视图的价格表。 支持筛选器以按月获取历史记录。
 ms.date: 01/24/2020
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 002b39b08e7daee35cf8e6f1175749f6428ff252
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 4d53548141032f089d5f56c73b3ff3b776712cd0
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "76796626"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342269"
 ---
 # <a name="get-a-price-sheet"></a>获取价目表
 

@@ -3,14 +3,14 @@ title: 合作伙伴 REST 资源
 description: 用于通过合作伙伴 REST API 创建请求和分析响应的 JSON 元素的定义。
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 2fbab9020d3028a7416585fd7249cab02610e5eb
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 99989e2e3ba9322697f5d834c2f0c3dc9097dd09
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "74556627"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342142"
 ---
 # <a name="partner-rest-resources"></a>合作伙伴 REST 资源
 
