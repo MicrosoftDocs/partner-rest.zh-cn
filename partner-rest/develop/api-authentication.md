@@ -3,14 +3,14 @@ title: 合作伙伴 API 身份验证
 description: 配置身份验证设置，以便将合作伙伴 API 与 Azure AD 配合用于身份验证。
 ms.date: 05/17/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: cd0aca43ad243a17779fe76edd107c5156d4a040
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
+ms.openlocfilehash: c5810678dccc2be1c3c084c901299961d6ba7820
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556437"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342311"
 ---
 # <a name="partner-api-authentication"></a>合作伙伴 API 身份验证
 
@@ -36,6 +36,16 @@ ms.locfileid: "74556437"
 7. 将“委托权限”设置为“合作伙伴中心”。  
 
     ![Microsoft 合作伙伴 API 的委托权限配置屏幕的屏幕截图](../images/SelectUserPermission.png)
+    
+8. 搜索 Microsoft 合作伙伴  （Microsoft 合作伙伴中心  ）API (`fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd`)。
+
+    ![“请求 API 权限”屏幕的屏幕截图，其中包含对 Microsoft 合作伙伴中心 API 的搜索](../images/SearchPCApi.png)
+    
+9. 选择“Microsoft 合作伙伴中心”  并选中“user_impersonation”  。
+
+10. 将“委托权限”设置为“合作伙伴中心”。  
+
+    ![Microsoft 合作伙伴中心 API 的委托权限配置屏幕的屏幕截图](../images/SelectPCUserPermission.png)
 
 ## <a name="application-only-access"></a>仅限应用程序的访问
 

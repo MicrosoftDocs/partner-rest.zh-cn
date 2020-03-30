@@ -3,14 +3,14 @@ title: 创建引荐
 description: 在合作伙伴 API 中创建独立的或共享的引荐。
 ms.date: 05/17/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 52782d55a84847bbe94fdfebc54a2a1facda93cf
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
+ms.openlocfilehash: 6aab4b5f45030c3c16294b2929b1a6d3086fb951
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556577"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342289"
 ---
 # <a name="create-a-referral"></a>创建引荐
 
@@ -43,7 +43,7 @@ ms.locfileid: "74556577"
 
 下表说明了请求正文中适用于全新引荐的[引荐](referral-resources.md)属性。
 
-| 属性            | 在任务栏的搜索框中键入                                                                 | 描述                                                                                                          |
+| 属性            | 类型                                                                 | 说明                                                                                                          |
 |---------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | 名称                | 字符串                                                               | 引荐的名称。                                                                                            |
 | ExternalReferenceId | 字符串                                                               | 引荐的外部标识符。 例如，你自己的 Dynamics 365 潜在客户或机会 ID。                   |
@@ -63,8 +63,8 @@ ms.locfileid: "74556577"
 
 | 状态 | 允许的状态转换 | 允许的子状态            |
 |--------|---------------------------|------------------------------|
-| 新增    | 新增、活跃、已关闭       | 挂起、已接收            |
-| 活跃 | 活跃、已关闭            | 接受                     |
+| “新建”    | 新增、活跃、已关闭       | 挂起、已接收            |
+| Active | 活跃、已关闭            | 接受                     |
 | 关闭 | 关闭                    | 赢得、丢失、已拒绝、已过期 |
 
 ### <a name="request-example"></a>请求示例
