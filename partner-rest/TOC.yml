@@ -1,5 +1,5 @@
 - name: 合作伙伴开发人员文档
-  href: index.md
+  href: index.yml
   items:
     - name: 概述和方案
       href: develop/index.md
