@@ -1,19 +1,20 @@
 ---
-title: Microsoft 合作伙伴 API 概述和方案
-description: 用于开发应用的 Microsoft 合作伙伴的概述和方案
-ms.date: 05/21/2019
+title: Microsoft 合作伙伴 REST API
+description: 适用于使用 REST API 开发应用的 Microsoft 合作伙伴的概述和方案。
+ms.date: 04/09/2020
 ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
-ms.topic: landing-page
-searchScope: []
-ms.openlocfilehash: 19cafd370180c7a50f8c1c49cafc97bc90912ff5
-ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
+ms.topic: overview
+ms.openlocfilehash: a567578a610abdd5e6da3fb92703bc6b4b9e512d
+ms.sourcegitcommit: 3c165938f544ff226cbe11ca21ed5aa00448d9b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80342212"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81112559"
 ---
-# <a name="microsoft-partner-api-overviews-and-scenarios"></a>Microsoft 合作伙伴 API 概述和方案
+# <a name="microsoft-partner-rest-api-scenarios"></a>Microsoft 合作伙伴 REST API 方案
+
+Microsoft 合作伙伴 REST API 是 [Microsoft 合作伙伴中心 API](https://docs.microsoft.com/partner-center/develop/) 的后续产品。 借助此 API，你就能够以编程方式访问合作伙伴中心的功能。
 
 * [合作伙伴 API 入门](get-started.md)
 * [合作伙伴 API 身份验证](api-authentication.md)

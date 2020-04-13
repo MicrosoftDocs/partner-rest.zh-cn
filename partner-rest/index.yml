@@ -1,0 +1,37 @@
+### YamlMime:Landing
+title: Microsoft 合作伙伴 REST API
+summary: Microsoft 合作伙伴 REST API 是 Microsoft 合作伙伴中心 API 的后续产品。 借助此 API，你就能够以编程方式访问合作伙伴中心的功能。
+metadata:
+  title: 合作伙伴中心开发人员文档
+  description: Microsoft 合作伙伴 REST API 是 Microsoft 合作伙伴中心 API 的后续产品。 借助此 API，你就能够以编程方式访问合作伙伴中心的功能。
+  ms.service: partner-dashboard
+  ms.subservice: partnercenter-sdk
+  ms.topic: landing-page
+  author: jasonwhowell
+  ms.author: jasonh
+  ms.date: 04/09/2020
+  ms.openlocfilehash: 163c778485f25318e1263a2064ded44fe617f8af
+  ms.sourcegitcommit: 3c165938f544ff226cbe11ca21ed5aa00448d9b4
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 04/10/2020
+  ms.locfileid: "81112586"
+landingContent:
+- title: Microsoft 合作伙伴 API 文档和资源
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 合作伙伴 REST API 入门
+      url: develop/get-started.md
+    - text: 合作伙伴 REST API 支持的方案
+      url: develop/scenarios.md
+  - linkListType: reference
+    links:
+    - text: 合作伙伴 REST API
+      url: develop/rest-api-reference.md
+  - linkListType: how-to-guide
+    links:
+    - text: 以编程方式管理引荐
+      url: develop/referrals.md
+    - text: 以编程方式检索云解决方案提供商定价
+      url: develop/pricing.md
