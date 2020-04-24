@@ -9,7 +9,7 @@ ms.openlocfilehash: a567578a610abdd5e6da3fb92703bc6b4b9e512d
 ms.sourcegitcommit: 3c165938f544ff226cbe11ca21ed5aa00448d9b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 04/23/2020
 ms.locfileid: "81112559"
 ---
 # <a name="microsoft-partner-rest-api-scenarios"></a>Microsoft 合作伙伴 REST API 方案
