@@ -5,22 +5,22 @@ ms.date: 01/24/2020
 ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 4d53548141032f089d5f56c73b3ff3b776712cd0
-ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
+ms.openlocfilehash: d6f1fbd39e7bdb30bdaef19cbf632cc87a2ea4ff
+ms.sourcegitcommit: dbb0a0d2b928eaacbae0795166b3e51547fb0bf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80342269"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82223310"
 ---
 # <a name="get-a-price-sheet"></a>获取价目表
 
-适用范围：
+适用于：
 
 - 合作伙伴 API
 
 本主题说明如何获取给定市场和视图的价目表。 此方法支持按月份获取历史记录的筛选器。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 - [Partner API authentication](api-authentication.md)（合作伙伴 API 身份验证）中所述的凭据。 此方案仅支持应用程序用户身份验证。 目前尚不支持只能。
 
@@ -33,6 +33,7 @@ ms.locfileid: "80342269"
 - 预订计量价格包括 CSP 合作伙伴折扣。 可从合作伙伴中心的 "定价和优惠" 页中获取预订的预计零售价格。
 - 有关 Azure 计划定价的详细信息，请参阅[azure 计划定价文档](https://docs.microsoft.com/partner-center/azure-plan-price-list)。
 - 合作伙伴定价和外国汇率 Api 不属于[合作伙伴中心 SDK](https://docs.microsoft.com/partner-center/develop/get-started)。
+- 此方法将价目表作为文件流返回。 文件流是 .csv 文件或 .csv 的压缩版本。 下面提供了有关如何请求压缩的文件的详细信息。
 
 ## <a name="rest-request"></a>REST 请求
 
@@ -48,8 +49,8 @@ ms.locfileid: "80342269"
 
 | 名称                   | 类型     | 必需 | 说明                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|市场                      | string   | 是       | 请求的市场的双字母国家/地区代码       |
-|PricesheetView | string   | 是       | 请求的价目表类型，可以是 azure_consumption 或 azure_reservations       |
+|市场                      | 字符串   | 是       | 请求的市场的双字母国家/地区代码       |
+|PricesheetView | 字符串   | 是       | 请求的价目表类型，可以是 azure_consumption 或 azure_reservations       |
 
 ### <a name="uri-filter-parameters"></a>URI 筛选器参数
 
@@ -57,25 +58,32 @@ ms.locfileid: "80342269"
 
 | 名称                   | 类型     | 必需 | 说明                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|时间线| string   | 是| 如果未通过，则默认值为 "当前"。 可能的值包括历史记录、当前和未来。       |
-|月| string   | 是| 仅在请求历史记录时是必需的，对于所请求的价目表，必须遵循 YYYYMM。       |
+|时间线| 字符串   | 否| 如果未通过，则默认值为 "当前"。 可能的值包括历史记录、当前和未来。       |
+|月份| 字符串   | 否| 仅在请求历史记录时是必需的，对于所请求的价目表，必须遵循 YYYYMM。       |
 
 ### <a name="request-headers"></a>请求标头
 
 - 有关详细信息，请参阅 [Partner REST headers](headers.md)（合作伙伴 REST 标头）。
 
+除了上述标头外，还可以将定价文件作为压缩的缩减带宽和下载时间来检索。 默认情况下，不压缩文件。 若要获取文件的压缩版本，可以包含下面的标头值。 请注意，压缩的工作表仅在2020年4月之后可用，4月2020之前的所有工作表都只能提供为未压缩。
+
+| Header                   | 值类型     | 值 | 描述                                                     |
+|------------------------|----------|----------|-----------------------------------------------------------------|
+|Accept-Encoding| 字符串   | deflate| 可选。 如果未压缩省略的文件流，则为。       |
+
 ### <a name="request-example"></a>请求示例
 
 ```http
 GET https://api.partner.microsoft.com/v1.0/sales/pricesheets(Market='ad',PricesheetView='azure_consumption')/$value?timeline=history&month=201909 HTTP/1.1
-Authorization: Bearer 
+Authorization: Bearer
+Accept-Encoding: deflate
 Host: api.partner.microsoft.com
 
 ```
 
 ## <a name="rest-response"></a>REST 响应
 
-如果成功，则此方法将价目表作为文件流返回。
+如果成功，则此方法将价目表作为文件流返回。 文件流是 .csv 文件或 .csv 的压缩版本。
 
 ### <a name="response-success-and-error-codes"></a>响应的成功和错误代码
 

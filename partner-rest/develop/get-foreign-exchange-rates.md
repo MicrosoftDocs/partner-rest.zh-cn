@@ -5,22 +5,22 @@ ms.date: 01/24/2020
 ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 5afcc09b7409e02cd072ac58cd7168652d4c3608
-ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
+ms.openlocfilehash: ce6ea990ac2caee5e8fb8566323de90d30745322
+ms.sourcegitcommit: dbb0a0d2b928eaacbae0795166b3e51547fb0bf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80342251"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82223320"
 ---
 # <a name="get-foreign-exchange-rates"></a>获取外币汇率
 
-适用范围：
+适用于：
 
 - 合作伙伴 API
 
 本主题说明如何获取给定月份的外币汇率。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 - [Partner API authentication](api-authentication.md)（合作伙伴 API 身份验证）中所述的凭据。 此方案仅支持应用程序用户身份验证。 目前尚不支持应用程序。
 
@@ -31,6 +31,7 @@ ms.locfileid: "80342251"
 - 外国汇率在整个月发布后均为 true。
 - 有关 Azure 计划[定价](pricing.md)的详细信息，请参阅[azure 计划定价文档](https://docs.microsoft.com/partner-center/azure-plan-price-list)。
 - 合作伙伴定价和外国汇率 Api 不属于[合作伙伴中心 SDK](https://docs.microsoft.com/partner-center/develop/get-started)。
+- 此方法以文件流的形式返回结果。 文件流是 .csv 文件或 .csv 的压缩版本。 下面提供了有关如何请求压缩的文件的详细信息。
 
 ## <a name="rest-request"></a>REST 请求
 
@@ -46,24 +47,31 @@ ms.locfileid: "80342251"
 
 | 名称                   | 类型     | 必需 | 说明                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|月                      | string   | 是       | 必须采用 YYYMM 格式。 如果省略，则默认为当前月份。       |
+|月份                      | 字符串   | 是       | 必须采用 YYYMM 格式。 如果省略，则默认为当前月份。       |
 
 ### <a name="request-headers"></a>请求标头
 
 - 有关详细信息，请参阅 [Partner REST headers](headers.md)（合作伙伴 REST 标头）。
 
+除了上述标头外，还可以将文件检索为压缩后的带宽和下载时间。 默认情况下，不压缩文件。 若要获取文件的压缩版本，可以包含下面的标头值。 请注意，压缩的工作表仅在2020年4月提供，2020年4月之前的所有请求仅可用于未压缩。
+
+| Header                   | 值类型     | 值 | 描述                                                     |
+|------------------------|----------|----------|-----------------------------------------------------------------|
+|Accept-Encoding| 字符串   | deflate| 可选。 如果未压缩省略的文件流，则为。       |
+
 ### <a name="request-example"></a>请求示例
 
 ```http
 GET https://api.partner.microsoft.com/v1.0/sales/fxrates(Month='201909')/$value HTTP/1.1
-Authorization: Bearer 
+Authorization: Bearer
+Accept-Encoding: deflate
 Host: api.partner.microsoft.com
 
 ```
 
 ## <a name="rest-response"></a>REST 响应
 
-如果成功，则此方法返回作为文件流的外部汇率。
+如果成功，则此方法返回作为文件流的外部汇率。 文件流是 .csv 文件或 .csv 的压缩版本。
 
 ### <a name="response-success-and-error-codes"></a>响应的成功和错误代码
 
