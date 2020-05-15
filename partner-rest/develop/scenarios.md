@@ -6,10 +6,10 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
 ms.openlocfilehash: e8fc3f8f019a9612cfc94b755252c9fac143ffcb
-ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
+ms.sourcegitcommit: 3c165938f544ff226cbe11ca21ed5aa00448d9b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
+ms.lasthandoff: 04/23/2020
 ms.locfileid: "80342060"
 ---
 # <a name="scenarios-supported-by-the-partner-rest-api"></a>合作伙伴 REST API 支持的方案
