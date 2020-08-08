@@ -5,12 +5,12 @@ ms.date: 01/24/2020
 ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: ce6ea990ac2caee5e8fb8566323de90d30745322
-ms.sourcegitcommit: dbb0a0d2b928eaacbae0795166b3e51547fb0bf6
+ms.openlocfilehash: 1e718624db54dcc2ed2b5d2d93dfd1cef0e6f96f
+ms.sourcegitcommit: bb3f5f7ee0489bded86fe52e55018c1f4f5032e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82223320"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "88001673"
 ---
 # <a name="get-foreign-exchange-rates"></a>获取外币汇率
 
@@ -23,6 +23,7 @@ ms.locfileid: "82223320"
 ## <a name="prerequisites"></a>必备条件
 
 - [Partner API authentication](api-authentication.md)（合作伙伴 API 身份验证）中所述的凭据。 此方案仅支持应用程序用户身份验证。 目前尚不支持应用程序。
+- 此 API 目前仅支持用户访问权限，其中合作伙伴必须属于以下角色之一：全局管理员、管理代理或销售代理。
 
 
 ## <a name="details"></a>详细信息
@@ -39,13 +40,13 @@ ms.locfileid: "82223320"
 
 | 方法   | 请求 URI                                                                                                 |
 |----------|-------------------------------------------------------------------------------------------------------------|
-| **GET** | https://api.partner.microsoft.com/v1.0/sales/fxrates(Month="{month}"）/$value                                  |
+| **GET** | https://api.partner.microsoft.com/v1.0/sales/fxrates(Month="{month}" ) /$value                                  |
 
 ### <a name="uri-required-parameters"></a>URI 必需参数
 
 使用以下路径参数来请求所需的外币汇率的月份。
 
-| 名称                   | 类型     | 必需 | 说明                                                     |
+| 名称                   | 类型     | 必选 | 描述                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
 |月份                      | 字符串   | 是       | 必须采用 YYYMM 格式。 如果省略，则默认为当前月份。       |
 
@@ -55,7 +56,7 @@ ms.locfileid: "82223320"
 
 除了上述标头外，还可以将文件检索为压缩后的带宽和下载时间。 默认情况下，不压缩文件。 若要获取文件的压缩版本，可以包含下面的标头值。 请注意，压缩的工作表仅在2020年4月提供，2020年4月之前的所有请求仅可用于未压缩。
 
-| Header                   | 值类型     | 值 | 描述                                                     |
+| 标头                   | 值类型     | “值” | 描述                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
 |Accept-Encoding| 字符串   | deflate| 可选。 如果未压缩省略的文件流，则为。       |
 

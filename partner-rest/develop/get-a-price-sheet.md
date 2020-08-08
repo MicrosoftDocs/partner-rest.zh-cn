@@ -5,12 +5,12 @@ ms.date: 01/24/2020
 ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: d6f1fbd39e7bdb30bdaef19cbf632cc87a2ea4ff
-ms.sourcegitcommit: dbb0a0d2b928eaacbae0795166b3e51547fb0bf6
+ms.openlocfilehash: 5195ebed6559bd71a7832a667e63ee801be1c82f
+ms.sourcegitcommit: bb3f5f7ee0489bded86fe52e55018c1f4f5032e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82223310"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "88001664"
 ---
 # <a name="get-a-price-sheet"></a>获取价目表
 
@@ -23,6 +23,7 @@ ms.locfileid: "82223310"
 ## <a name="prerequisites"></a>必备条件
 
 - [Partner API authentication](api-authentication.md)（合作伙伴 API 身份验证）中所述的凭据。 此方案仅支持应用程序用户身份验证。 目前尚不支持只能。
+- 此 API 目前仅支持用户访问权限，其中合作伙伴必须属于以下角色之一：全局管理员、管理代理或销售代理。
 
 ## <a name="details"></a>详细信息
 
@@ -41,13 +42,13 @@ ms.locfileid: "82223310"
 
 | 方法   | 请求 URI                                                                                                 |
 |----------|-------------------------------------------------------------------------------------------------------------|
-| **GET** | https://api.partner.microsoft.com/v1.0/sales/pricesheets(Market="{marketplace}"，PricesheetView = "{view}"）/$value                                     |
+| **GET** | https://api.partner.microsoft.com/v1.0/sales/pricesheets(Market="{marketplace}"，PricesheetView = "{view}" ) /$value                                     |
 
 ### <a name="uri-required-parameters"></a>URI 必需参数
 
 使用以下路径参数来请求所需的市场和价目表类型。
 
-| 名称                   | 类型     | 必需 | 说明                                                     |
+| 名称                   | 类型     | 必选 | 描述                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
 |市场                      | 字符串   | 是       | 请求的市场的双字母国家/地区代码       |
 |PricesheetView | 字符串   | 是       | 请求的价目表类型，可以是 azure_consumption 或 azure_reservations       |
@@ -56,10 +57,10 @@ ms.locfileid: "82223310"
 
 使用以下筛选器参数。
 
-| 名称                   | 类型     | 必需 | 说明                                                     |
+| 名称                   | 类型     | 必选 | 描述                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|时间线| 字符串   | 否| 如果未通过，则默认值为 "当前"。 可能的值包括历史记录、当前和未来。       |
-|月份| 字符串   | 否| 仅在请求历史记录时是必需的，对于所请求的价目表，必须遵循 YYYYMM。       |
+|时间线| string   | 否| 如果未通过，则默认值为 "当前"。 可能的值包括历史记录、当前和未来。       |
+|月份| string   | 否| 仅在请求历史记录时是必需的，对于所请求的价目表，必须遵循 YYYYMM。       |
 
 ### <a name="request-headers"></a>请求标头
 
@@ -67,7 +68,7 @@ ms.locfileid: "82223310"
 
 除了上述标头外，还可以将定价文件作为压缩的缩减带宽和下载时间来检索。 默认情况下，不压缩文件。 若要获取文件的压缩版本，可以包含下面的标头值。 请注意，压缩的工作表仅在2020年4月之后可用，4月2020之前的所有工作表都只能提供为未压缩。
 
-| Header                   | 值类型     | 值 | 描述                                                     |
+| 标头                   | 值类型     | “值” | 描述                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
 |Accept-Encoding| 字符串   | deflate| 可选。 如果未压缩省略的文件流，则为。       |
 
